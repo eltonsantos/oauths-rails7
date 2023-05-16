@@ -45,9 +45,9 @@ gem "bootsnap", require: false
 gem 'devise'
 
 gem "omniauth-google-oauth2"
-
 gem "omniauth-rails_csrf_protection"
 
+# NEED TWO GEMS TO INSTALL DOTENV
 gem 'dotenv', require: 'dotenv-rails'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 

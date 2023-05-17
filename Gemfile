@@ -47,6 +47,7 @@ gem 'devise'
 gem "omniauth-google-oauth2"
 gem "omniauth-rails_csrf_protection"
 gem 'omniauth-github'
+gem 'omniauth-facebook'
 
 # NEED TWO GEMS TO INSTALL DOTENV
 gem 'dotenv', require: 'dotenv-rails'

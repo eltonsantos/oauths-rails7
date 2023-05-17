@@ -315,4 +315,6 @@ Devise.setup do |config|
 
   config.omniauth :github, ENV['GITHUB_OAUTH_CLIENT_ID'], ENV['GITHUB_OAUTH_CLIENT_SECRET'], scope: 'profile email', prompt: 'select_account', image_aspect_ratio: 'square', image_size: 50
 
+  config.omniauth :facebook, ENV['FACEBOOK_OAUTH_CLIENT_ID'], ENV['FACEBOOK_OAUTH_CLIENT_SECRET'], scope: 'profile email', prompt: 'select_account', image_aspect_ratio: 'square', image_size: 50
+
 end

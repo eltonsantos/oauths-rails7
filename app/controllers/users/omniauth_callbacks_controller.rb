@@ -24,7 +24,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     @auth ||= request.env['omniauth.auth']
   end
 
-
   # FOR TUTORIAL 2
   # def google_oauth2
   #   @user = User.from_omniauth(request.env["omniauth.auth"])
@@ -38,6 +37,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   #   end
   # end
 
+  # GITHUB
   def github
     @user = User.from_github(request.env['omniauth.auth'])
 
@@ -49,6 +49,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
+  # FACEBOOK
   def facebook
     @user = User.from_github(request.env['omniauth.auth'])
 
@@ -60,6 +61,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
+  # LINKEDIN
   def linkedin
     @user = User.from_github(request.env['omniauth.auth'])
 

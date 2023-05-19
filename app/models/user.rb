@@ -16,6 +16,7 @@ class User < ApplicationRecord
   #   end
   # end
 
+  # GITHUB
   def self.from_github(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
@@ -23,6 +24,7 @@ class User < ApplicationRecord
     end
   end
 
+  # FACEBOOK
   def self.from_facebook(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
@@ -30,6 +32,7 @@ class User < ApplicationRecord
     end
   end
 
+  # LINKEDIN
   def self.from_linkedin(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email

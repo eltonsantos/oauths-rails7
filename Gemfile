@@ -66,6 +66,9 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
+  # Run `mailcatcher` on terminal. This run on http://127.0.0.1:1080
+  gem "mailcatcher"
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
